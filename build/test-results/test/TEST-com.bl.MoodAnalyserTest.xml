@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.bl.MoodAnalyserTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2021-09-16T22:39:24" hostname="LAPTOP-GDO34K0C" time="0.188">
+<testsuite name="com.bl.MoodAnalyserTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2021-09-16T23:43:26" hostname="LAPTOP-GDO34K0C" time="0.087">
   <properties/>
-  <testcase name="givenMessage_WhenSad_ShouldReturnSad()" classname="com.bl.MoodAnalyserTest" time="0.145"/>
-  <testcase name="givenMessage_WhenInAnyMood_ShouldReturnHappy()" classname="com.bl.MoodAnalyserTest" time="0.011"/>
-  <testcase name="givenMessage_WhenNotSad_ShouldReturnHappy()" classname="com.bl.MoodAnalyserTest" time="0.012"/>
+  <testcase name="givenMessage_WhenSad_ShouldReturnSad()" classname="com.bl.MoodAnalyserTest" time="0.061"/>
+  <testcase name="givenMessage_WhenInAnyMood_ShouldReturnHappy()" classname="com.bl.MoodAnalyserTest" time="0.004"/>
+  <testcase name="givenMessage_WhenSad_ShouldReturnSad_UsingParameterizedConstructor()" classname="com.bl.MoodAnalyserTest" time="0.004"/>
+  <testcase name="givenMessage_WhenNotSad_ShouldReturnHappy()" classname="com.bl.MoodAnalyserTest" time="0.008"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

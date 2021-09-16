@@ -8,6 +8,19 @@ package com.moodanayzer;
  */
 
 public class MoodAnalyzer {
+
+    private String message;
+
+    // parameterized constructor
+    public MoodAnalyzer(String message) {
+        this.message = message;
+    }
+
+    // default constructor
+    public MoodAnalyzer() {
+
+    }
+
     // main method
     public static void main(String[] args) {
         // printing welcome message.
@@ -25,6 +38,14 @@ public class MoodAnalyzer {
             return "SAD";
         else
             return "HAPPY";
+    }
+
+    public String analyseMood() {
+        if (message.contains("Sad"))
+            return "SAD";
+            else
+                return "HAPPY";
+
     }
 
 }
