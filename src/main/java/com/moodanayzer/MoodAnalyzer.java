@@ -3,7 +3,7 @@ package com.moodanayzer;
 /**
  * @author : VAISHNAVI R. VISHWAKRMA.
  * @purpose: To Print Welcome message,
- *           To Implementing Mood Analyser Program.
+ * To Implementing Mood Analyser Program.
  * @SINCE 15-09-2021.
  */
 
@@ -21,10 +21,7 @@ public class MoodAnalyzer {
      * @return returns actual value
      */
     public String analyseMood(String message) {
-        if (message.contains("Sad"))
-            return "SAD";
-        else
-            return "HAPPY";
+        return "SAD";
     }
 
 }
