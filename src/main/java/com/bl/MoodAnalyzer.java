@@ -1,10 +1,10 @@
-package com.moodanayzer;
+package com.bl;
 
 /**
  * @author : VAISHNAVI R. VISHWAKRMA.
  * @purpose: To Print Welcome message,
- * To Implementing Mood Analyser Program.
- * @SINCE 15-09-2021.
+ * To read message from user and return sad if message contains sad else happy.
+ * @since : 15-09-2021.
  */
 
 public class MoodAnalyzer {
@@ -28,34 +28,24 @@ public class MoodAnalyzer {
     }
 
     /**
-     * This method is created for implementing test cases
-     *
+     * This method is created for implementing test cases which does not use parameterized constructor
      * @param message This is the first parameter used to store the message
-     * @return returns actual value
+     * @return returns actual value from analyseMood method
      */
-    public String analyseMood(String message) {
-        if (message.contains("Sad"))
-            return "SAD";
-        else
-            return "HAPPY";
+    public String analyseMood(String message) throws MoodAnalyzerException {
+        this.message = message;
+        return analyseMood();
     }
 
-    /**
-     * Purpose : This method is created for implementing test cases
-     *           which uses parameterized constructor
-     * Condition : Handle NullPointerException using try-catch block
-     * @return returns actual value
-     */
-    public String analyseMood() {
+    public String analyseMood() throws MoodAnalyzerException {
         try {
             if (message.contains("Sad"))
                 return "SAD";
             else
                 return "HAPPY";
-
         } catch (NullPointerException exception) {
-            return "HAPPY";
+            throw new MoodAnalyzerException(MoodAnalyzerException.ExceptionType.ENTERED_NULL,
+                                                                "Please enter proper message");
         }
     }
-
 }
