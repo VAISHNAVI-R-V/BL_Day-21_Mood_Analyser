@@ -40,12 +40,22 @@ public class MoodAnalyzer {
             return "HAPPY";
     }
 
+    /**
+     * Purpose : This method is created for implementing test cases
+     *           which uses parameterized constructor
+     * Condition : Handle NullPointerException using try-catch block
+     * @return returns actual value
+     */
     public String analyseMood() {
-        if (message.contains("Sad"))
-            return "SAD";
+        try {
+            if (message.contains("Sad"))
+                return "SAD";
             else
                 return "HAPPY";
 
+        } catch (NullPointerException exception) {
+            return "HAPPY";
+        }
     }
 
 }
