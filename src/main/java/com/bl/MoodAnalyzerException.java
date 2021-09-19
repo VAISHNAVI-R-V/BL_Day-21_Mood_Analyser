@@ -3,8 +3,9 @@ package com.bl;
 public class MoodAnalyzerException extends Exception {
     ExceptionType type;
 
+    // Whether the mood is null pr empty is informed to user.
     enum ExceptionType {
-        ENTERED_NULL
+        ENTERED_EMPTY, ENTERED_NULL
     }
 
     /**

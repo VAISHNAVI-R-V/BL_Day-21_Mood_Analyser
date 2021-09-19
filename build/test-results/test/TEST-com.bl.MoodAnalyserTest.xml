@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.bl.MoodAnalyserTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2021-09-17T16:12:43" hostname="LAPTOP-GDO34K0C" time="0.148">
+<testsuite name="com.bl.MoodAnalyserTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2021-09-19T15:07:42" hostname="LAPTOP-GDO34K0C" time="0.18">
   <properties/>
-  <testcase name="givenMessage_WhenSad_ShouldReturnSad()" classname="com.bl.MoodAnalyserTest" time="0.074"/>
-  <testcase name="givenMessage_WhenInAnyMood_ShouldReturnHappy()" classname="com.bl.MoodAnalyserTest" time="0.014"/>
-  <testcase name="givenMessage_WhenSad_ShouldReturnSad_UsingParameterizedConstructor()" classname="com.bl.MoodAnalyserTest" time="0.008"/>
-  <testcase name="givenNullMood_ShouldReturnHappy()" classname="com.bl.MoodAnalyserTest" time="0.007"/>
-  <testcase name="givenMessage_WhenNotSad_ShouldReturnHappy()" classname="com.bl.MoodAnalyserTest" time="0.004"/>
+  <testcase name="givenEmptyMood_ShouldThrow_MoodAnalysisException()" classname="com.bl.MoodAnalyserTest" time="0.107"/>
+  <testcase name="givenMessage_WhenSad_ShouldReturnSad()" classname="com.bl.MoodAnalyserTest" time="0.038"/>
+  <testcase name="givenMessage_WhenInAnyMood_ShouldReturnHappy()" classname="com.bl.MoodAnalyserTest" time="0.003"/>
+  <testcase name="givenMessage_WhenSad_ShouldReturnSad_UsingParameterizedConstructor()" classname="com.bl.MoodAnalyserTest" time="0.004"/>
+  <testcase name="givenNullMood_ShouldReturnHappy()" classname="com.bl.MoodAnalyserTest" time="0.005"/>
+  <testcase name="givenMessage_WhenNotSad_ShouldReturnHappy()" classname="com.bl.MoodAnalyserTest" time="0.002"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

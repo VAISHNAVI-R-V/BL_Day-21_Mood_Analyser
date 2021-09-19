@@ -29,6 +29,7 @@ public class MoodAnalyzer {
 
     /**
      * This method is created for implementing test cases which does not use parameterized constructor
+     *
      * @param message This is the first parameter used to store the message
      * @return returns actual value from analyseMood method
      */
@@ -45,7 +46,7 @@ public class MoodAnalyzer {
                 return "HAPPY";
         } catch (NullPointerException exception) {
             throw new MoodAnalyzerException(MoodAnalyzerException.ExceptionType.ENTERED_NULL,
-                                                                "Please enter proper message");
+                    "Please enter proper message");
         }
     }
 }
